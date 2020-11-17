@@ -5,13 +5,15 @@ public class menuak {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
+		long factorial = 1;
 		int elec,x,y;
 		
 		System.out.println("menu \r\n"
 				+ "1-suma \r\n"
 				+ "2-resta \r\n"
 				+ "3-multiplicar \r\n"
-				+ "4-dividir");
+				+ "4-dividir \r\n"
+				+ "5-factorial de tu numero");
 		elec = input.nextInt();
 		switch(elec) {
 		case 1: 
@@ -43,6 +45,11 @@ public class menuak {
 			System.out.println(x/y);
 			break;
 		}
+		x = input.nextInt();
+		for (int i = x; i > 0; i--) {
+			factorial = factorial * i;
+		}
+		System.out.println("El factorial de " + x + " es: " + factorial);
 	}
 
 }
