@@ -26,7 +26,7 @@ public class menuak {
 		case 2:
 			System.out.println("Primer numero");
 			x = input.nextInt();
-			System.out.println("Segundo numero");
+			System.out.println("Segundo numeros");
 			y = input.nextInt();
 			System.out.println(x-y);
 			break;
